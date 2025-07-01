@@ -1,0 +1,52 @@
+{
+    "categorias": [
+        {
+         "id":1,
+         "nombre": "Snacks y golosinas",
+         "descripcion": "Proodutos comunes de Snacks y golosinas"   
+        },
+        {
+         "id":2,
+         "nombre": "Bebidas",
+          "descripcion": "Productos comunes de bebidas , como gasesosas etc"
+        },
+        {
+         "id": 3,
+         "nombre": "Articulos de Limpieza",
+         "descripcion": "Productos comunes de limpieza para el hogar"
+        },
+        {
+         "id": 4,
+         "nombre": "Lacteos",
+         "descripcion": "Productos comunes lacteos , como leche, mantequilla etc"   
+        },
+        {
+            "id": 5,
+            "nombre": "Cuidado Personal",
+            "descripcion": "Productos comunes de cuidado personal"
+        },
+        {
+            "id": 6,
+            "nombre": "Alimentos Perecibles",
+            "descripcion": "Alimentos como frutas etc"
+        },
+        {
+            "id": 7,
+            "nombre": "Alimentos no Perecibles",
+            "descripcion": "Alimentos como el arroz , la mayonesa , etc"
+        }
+        
+    ],
+    "productos": [
+        {
+            "id": 1,
+            "nombre": "Galleta oreo",
+            "descripcion": "Galleta cubierta de chocolate",
+            "precio": 1.00,
+            "categoriaId": 1,
+            "photo": "https://d2o812a6k13pkp.cloudfront.net/Productos/40417108_0120220722161850.jpg"
+
+        }
+    ]
+
+}
