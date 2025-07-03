@@ -40,12 +40,316 @@
     "productos": [
         {
             "id": 1,
-            "nombre": "Galleta oreo",
+            "nombre": "Galleta Oreo",
             "descripcion": "Galleta cubierta de chocolate",
             "precio": 1.00,
             "categoriaId": 1,
             "photo": "https://d2o812a6k13pkp.cloudfront.net/Productos/40417108_0120220722161850.jpg"
 
+        },
+        {
+            "id": 2,
+            "nombre": "Galleta Tentacion",
+            "descripcion": "Galleta sabor chocolate",
+            "precio": 1.50,
+            "categoriaId": 1,
+            "photo": "/src/assets/Galleta-tentacion.png"
+        },
+        {
+            "id": 3,
+            "nombre": "Galleta Morocha",
+            "descripcion": "Galletra de vainilla cubierta de chocolate",
+            "precio": 1.00,
+            "categoriaId": 1,
+            "photo": "https://minimarketmajaz.com/wp-content/uploads/2021/06/morochas-unidad.jpg"
+        },
+        {
+            "id": 4,
+            "nombre": "Doritos",
+            "descripcion": "Snack de maiz",
+            "precio": 2.00,
+            "categoriaId": 1,
+            "photo":"https://tse3.mm.bing.net/th/id/OIP.RUUfSDL7fPYg3NO48QiFyQHaHa?r=0&cb=thvnextc2&rs=1&pid=ImgDetMain&o=7&rm=3"
+        },
+        {
+            "id": 5,
+            "nombre": "Papas Lays",
+            "descripcion": "Snack de papas",
+            "precio": 1.50,
+            "categoriaId": 1,
+            "photo": "https://f.fcdn.app/imgs/4ef3de/www.elclon.com.uy/clonuy/c411/original/catalogo/946485-1/1920-1200/papas-lays-clasicas-250-grs-papas-lays-clasicas-250-grs.jpg"
+        },
+        {
+            "id": 6,
+            "nombre": "Cheesetris",
+            "descripcion": "Snack de maiz con forma de deditos",
+            "precio": 1.50,
+            "categoriaId": 1,
+            "photo": "https://montenegro.com.pe/Images/Product/MIG0007724.jpeg"
+        },
+        {
+            "id": 7,
+            "nombre": "Coca Cola",
+            "descripcion": "Bebida gasificada sabor cola , de 500 Ml",
+            "precio": 2.00,
+            "categoriaId": 2,
+            "photo": "https://duranalmacen.com.ar/wp-content/uploads/2021/09/Gaseosa-Coca-Cola-500-Cc-COCA-COLA-X500ML-1-3024.jpg"
+        },
+        {
+            "id": 8,
+            "nombre": "Sporade",
+            "descripcion": "Bebida energizante",
+            "precio": 2.50,
+            "categoriaId": 2,
+            "photo": "https://th.bing.com/th/id/R.7d5ef1b8ea7dfabdb562d4fa8c179db2?rik=cUygxq1Mywaftg&pid=ImgRaw&r=0"
+        },
+        {
+            "id": 9,
+            "nombre": "Inka Cola",
+            "descripcion": "Bebida gasificada de 500 Ml",
+            "precio": 3,
+            "categoriaId": 2,
+            "photo": "https://i.pinimg.com/originals/4d/60/66/4d6066225e3b89f4c05e751cfa1710fd.jpg"
+        },
+        {
+            "id": 10,
+            "nombre": "Sprite",
+            "descripcion": "Bebida gasificada sabor limon de 500 Ml",
+            "precio": 2.00,
+            "categoriaId": 2,
+            "photo": "https://www.bestwaywholesale.co.uk/img/products/1000/9/54491069.jpg"
+        },
+        {
+            "id": 11,
+            "nombre": "Fanta",
+            "descripcion": "Bebida gasificada sabor tropical de 500 ml",
+            "precio": 1.50,
+            "categoriaId": 2,
+            "photo": "https://comercialtrevino.com/images/830.jpgs"
+        },
+        {
+            "id": 12,
+            "nombre": "Jugo Frugos del valle",
+            "descripcion": "Jugo sabor naranja de 500 Ml",
+            "precio": 1.50,
+            "categoriaId": 2,
+            "photo": "https://cdn.shopify.com/s/files/1/0480/9424/9119/products/7771609003053_1024x1024.jpg?v=1656732632"
+        },
+        {
+            "id": 13,
+            "nombre": "Detergente Bolivar",
+            "descripcion": "Detergente para lavar ropa de la marca bolivar",
+            "precio": 5.00,
+            "categoriaId": 3,
+            "photo": "https://plazavea.vteximg.com.br/arquivos/ids/361765-450-450/20144387.jpg?v=637310303060970000"
+        },
+        {
+            "id": 14,
+            "nombre": "Lejia Clorox",
+            "descripcion": "lejia para limpieza de casa , de la marca Clorox",
+            "precio": 4.50,
+            "categoriaId": 3,
+            "photo": "https://th.bing.com/th/id/R.994c49e1cf656e9fe9e9eb27ebb77eb2?rik=45BXRPxrurrXrA&pid=ImgRaw&r=0"
+        },
+        {
+            "id": 15,
+            "nombre": "Ayudin",
+            "descripcion": "Detergente para platos de la marca Ayudin",
+            "precio": 4.00,
+            "categoriaId": 3,
+            "photo": "https://abarroteselprofe.com/wp-content/uploads/2023/03/IMG_20230504_172257_HDR.jpg"
+        },
+        {
+            "id": 16,
+            "nombre": "Ariel",
+            "descripcion": "Detergente para ropa de la marca Ariel",
+            "precio": 4.50,
+            "categoriaId": 3,
+            "photo": "https://tse3.mm.bing.net/th/id/OIP.nxmyRtt3HiQqsUAkTUtQSAHaHa?r=0&cb=thvnextc2&rs=1&pid=ImgDetMain&o=7&rm=3"
+        },
+        {
+            "id": 17,
+            "nombre": "Opal",
+            "descripcion": "Detergente para lavar ropa de la marca Opal",
+            "precio": 4.20,
+            "categoriaId": 3,
+            "photo": "https://plazavea.vteximg.com.br/arquivos/ids/190649-1000-1000/20127626.jpg?v=636360062170630000"
+        },
+        {
+            "id": 18,
+            "nombre": "Ambientador en Spray",
+            "descripcion": "Ambientador en spray para baño de la marca Sapolio",
+            "precio": 5.00,
+            "categoriaId": 3,
+            "photo": "https://corporacionliderperu.com/41587-large_default/sapolio-ambientador-spray-x-360-ml-lavanda.jpg"
+        },
+        {
+             "id": 19,
+            "nombre": "Queso",
+            "descripcion": "Queso freso , 100 gr",
+            "precio": 3.00,
+            "categoriaId": 4,
+            "photo": "https://tse1.explicit.bing.net/th/id/OIP.o05bzoAbHkTTIM9WPdzD8AHaFj?r=0&cb=thvnextc2&rs=1&pid=ImgDetMain&o=7&rm=3s"
+        },
+        {
+             "id": 20,
+            "nombre": "mantequilla",
+            "descripcion": "Mantequilla marca gloria de 300gr",
+            "precio": 5.50,
+            "categoriaId": 4,
+            "photo": "https://th.bing.com/th/id/R.ddde76d9237bff28611b61911a0adc9f?rik=Eq687CR9zzP6Nw&riu=http%3a%2f%2fmercaderiasperu.com%2fassets%2fuploads%2f7bae25ddd800f5a512eecfbb88a91819.jpg&ehk=DLb0dD42WqL9mEO3ULJ1b4OKQ5X2FJ4vk0BDYreXYSM%3d&risl=&pid=ImgRaw&r=0s"
+        },
+        {
+             "id": 21,
+            "nombre": "Leche Gloria",
+            "descripcion": "Leche en caja entera de la marca gloria",
+            "precio": 6.00,
+            "categoriaId": 4,
+            "photo": "https://plazavea.vteximg.com.br/arquivos/ids/24844118-1000-1000/358217.jpg?v=638090212746770000s"
+        },
+        {
+             "id": 22,
+            "nombre": "Yogurt",
+            "descripcion": "Yogurt de la marca gloria de 300ml",
+            "precio": 6.00,
+            "categoriaId": 4,
+            "photo": "https://tse4.mm.bing.net/th/id/OIP.xj0BxrchDvO1XXTXHysfaQHaJs?r=0&cb=thvnextc2&rs=1&pid=ImgDetMain&o=7&rm=3"
+        },
+        {
+             "id": 23,
+            "nombre": "Yogurt Griego",
+            "descripcion": "Yogut Griego de la marca gloria de 250ml",
+            "precio": 7.50,
+            "categoriaId":43,
+            "photo": "https://plazavea.vteximg.com.br/arquivos/ids/16382233-1000-1000/20257687.jpg?v=637970167331770000s"
+        },
+        {
+             "id": 24,
+            "nombre": "Leche de almendras",
+            "descripcion": "Leche de almendras de ka marca Laive",
+            "precio": 7.50,
+            "categoriaId": 4,
+            "photo": "https://i0.wp.com/teloconsigo.pe/wp-content/uploads/2020/05/Bebida-de-almendra-Laive-caja-1-L-LA206.jpg?ssl=1"
+        },
+        {
+             "id": 25,
+            "nombre": "Jabon Dove",
+            "descripcion": "Jabon para cuerpo de la marca Dove",
+            "precio": 2.50,
+            "categoriaId": 5,
+            "photo": "https://walmartcr.vtexassets.com/arquivos/ids/202952/Jabon-Dove-Original-Cosmetico-90Gr-1-24515.jpg?v=637577738692030000"
+        },
+        {
+             "id": 26,
+            "nombre": "Pasta dental",
+            "descripcion": "Pasta de dientes de la marca Colgate",
+            "precio": 2.00,
+            "categoriaId": 5,
+            "photo": "https://opamercado.com/wp-content/uploads/2024/10/Pasta-Dental-Colgate-Triple-Accion-75ml-1.jpg"
+        },
+        {
+             "id": 27,
+            "nombre": "Shampoo Head y Shoulders",
+            "descripcion": "Shampoo para cabello de la marca head y shoulders de 300ml",
+            "precio":6.50,
+            "categoriaId": 5,
+            "photo": "https://i5.walmartimages.com/asr/c6ee4941-88b7-485f-bd3c-54d2296aed50.7cbb9c1c8ac7b4dd70bf46479194d579.jpeg"
+        },
+        {
+             "id": 28,
+            "nombre": "Jabon liquido",
+            "descripcion": "Jabon liquido para manos de 3o00ml",
+            "precio": 4.00,
+            "categoriaId": 5,
+            "photo": "https://tse4.mm.bing.net/th/id/OIP.VCfB54DZZ_DV8Rsb7WWKPwHaHa?r=0&cb=thvnextc2&rs=1&pid=ImgDetMain&o=7&rm=3"
+        },
+        {
+             "id": 29,
+            "nombre": "Prestobarba",
+            "descripcion": "Maquina de afeitar de la marca Gillete",
+            "precio": 2.50,
+            "categoriaId": 5,
+            "photo": "https://www.rolleri.cl/wp-content/uploads/2023/02/prestobarba-3.jpg"
+        },
+        {
+             "id": 30,
+            "nombre": "Enjuage Bucal",
+            "descripcion": "Enjuage bucal de la marca Colgate de 400ml",
+            "precio": 7.50,
+            "categoriaId": 5,
+            "photo": "https://embon.com.ar/images/product_image/322/0?fit=fill&w=1080&h=1080"
+        },
+        {
+             "id": 31,
+            "nombre": "Manzana",
+            "descripcion": "1kg de manzana",
+            "precio": 3.00,
+            "categoriaId": 6,
+            "photo": "https://www.postposmo.com/wp-content/uploads/2022/01/recetas-con-manzanas-1.jpg"
+        },
+        {
+             "id": 32,
+            "nombre": "Platano",
+            "descripcion": "3 platanos ",
+            "precio": 1.00,
+            "categoriaId": 6,
+            "photo": "https://tse4.mm.bing.net/th/id/OIP.FNs-zOGpxjJRBABuOe39hwHaHa?r=0&cb=thvnextc2&rs=1&pid=ImgDetMain&o=7&rm=3"
+        },
+        {
+             "id": 33,
+            "nombre": "Fresa",
+            "descripcion": "1kg de fresa",
+            "precio": 5.50,
+            "categoriaId": 6,
+            "photo": "https://libbys.es/wordpress/wp-content/uploads/2018/05/fresas.jpg"
+        },
+        {
+             "id": 34,
+            "nombre": "Uva",
+            "descripcion": "1kg de uva",
+            "precio": 7.50,
+            "categoriaId": 6,
+            "photo": "https://th.bing.com/th/id/R.990a17130427cf4337b9e1b9398dd32c?rik=dKVqTe8obxx1iw&riu=http%3a%2f%2fwww.frutasdepiura.com.pe%2fimages%2fuva.jpg&ehk=aGkDfxlAWPfY2UcKQmzkdO%2fI%2fe8ykkjlngpVNmCI3cI%3d&risl=&pid=ImgRaw&r=0"
+        },
+        {
+             "id": 35,
+            "nombre": "Arroz",
+            "descripcion": "Arroz de la maca Faraon de un 1kg",
+            "precio": 5.50,
+            "categoriaId": 7,
+            "photo": "https://vegaperu.vtexassets.com/arquivos/ids/155610/7754294000071.jpg?v=637612900469830000"
+        },
+        {
+             "id": 36,
+            "nombre": "Fideos",
+            "descripcion": "Fideos de la marca don Victorio de 500gr",
+            "precio": 4.50,
+            "categoriaId": 7,
+            "photo": "https://d2o812a6k13pkp.cloudfront.net/Productos/40383086_01.jpg"
+        },
+        {
+             "id": 37,
+            "nombre": "Mwermelada",
+            "descripcion": "Mermelada en pote de la marca gloria de 300ml",
+            "precio": 3.50,
+            "categoriaId": 7,
+            "photo": "https://th.bing.com/th/id/R.8b158e2751b8207bf91e917f569f6dbd?rik=GY3irvqUlEjxUQ&riu=http%3a%2f%2fagromiperu.com.pe%2fwp-content%2fuploads%2f2021%2f07%2fMERMELADA-DE-FRESA-GLORIA.jpg&ehk=80X28ErQhPpUf9hjTX48ofi52IsCZveLL12Po4KCGq4%3d&risl=&pid=ImgRaw&r=0"
+        },
+        {
+             "id": 38,
+            "nombre": "Avena",
+            "descripcion": "Avena de la amrca Quaquer de 300gr",
+            "precio": 2.00,
+            "categoriaId": 7,
+            "photo": "https://plazavea.vteximg.com.br/arquivos/ids/2580247-1000-1000/20251263.jpg?v=637696003348970000"
+        },
+        {
+             "id": 39,
+            "nombre": "Mayonesa",
+            "descripcion": "Mayonesa alacena de 200ml",
+            "precio": 5.50,
+            "categoriaId": 7,
+            "photo": "https://tse4.mm.bing.net/th/id/OIP.zNg_6Dl55u0CfFPfStXi4QHaHa?r=0&cb=thvnextc2&rs=1&pid=ImgDetMain&o=7&rm=3"
         }
     ]
 
