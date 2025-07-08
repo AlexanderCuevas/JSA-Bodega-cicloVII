@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import './App.css';
 import { SlMagnifier } from "react-icons/sl";
+import { ChevronDown, ChevronUp, Calendar, Clock } from 'lucide-react';
 import ProductosData from './data/Productos.json';
 import Logo from './assets/logo.png';
 
@@ -10,7 +11,7 @@ function App() {
   const [searchTerm, setSearchTerm] = useState('');
   const [selectedCategory, setSelectedCategory] = useState('');
   const [filteredProducts, setFilteredProducts] = useState([]);
-
+  const [expandedProduct, setExpandedProduct] = useState(null);
 
   useEffect(() => {
     setCategories(ProductosData.categorias);
@@ -18,10 +19,8 @@ function App() {
     setFilteredProducts(ProductosData.productos);
   }, []);
 
-
   useEffect(() => {
     let currentProducts = products;
-
 
     if (searchTerm) {
       currentProducts = currentProducts.filter(product =>
@@ -30,31 +29,40 @@ function App() {
       );
     }
 
-
     if (selectedCategory) {
       currentProducts = currentProducts.filter(product =>
         product.categoriaId === parseInt(selectedCategory)
       );
     }
 
-  
     setFilteredProducts(currentProducts);
   }, [searchTerm, selectedCategory, products]);
-
 
   const handleSearchChange = (event) => {
     setSearchTerm(event.target.value);
   };
 
-
   const handleCategoryChange = (event) => {
     setSelectedCategory(event.target.value);
   };
 
-
   const handleResetFilters = () => {
     setSearchTerm(''); 
     setSelectedCategory(''); 
+  };
+
+  const handleProductClick = (productId) => {
+    setExpandedProduct(expandedProduct === productId ? null : productId);
+  };
+
+  const formatDate = (dateString) => {
+    if (!dateString) return 'No especificada';
+    const date = new Date(dateString);
+    return date.toLocaleDateString('es-ES', {
+      year: 'numeric',
+      month: 'long',
+      day: 'numeric'
+    });
   };
 
   return (
@@ -106,16 +114,62 @@ function App() {
           {filteredProducts.length > 0 ? (
             <ul className="products-list">
               {filteredProducts.map(product => (
-                <li key={product.id} className="product-item">
-                  <img
-                    src={product.photo}
-                    alt={product.nombre}
-                    className="product-image"
-                
-                  />
-                  <h3>{product.nombre}</h3>
-                  <p>{product.descripcion}</p>
-                  <p className="product-price">Precio: S/. {product.precio.toFixed(2)}</p>
+                <li 
+                  key={product.id} 
+                  className={`product-item ${expandedProduct === product.id ? 'expanded' : ''}`}
+                  onClick={() => handleProductClick(product.id)}
+                >
+                  <div className="product-main-content">
+                    <img
+                      src={product.photo}
+                      alt={product.nombre}
+                      className="product-image"
+                    />
+                    <h3>{product.nombre}</h3>
+                    <p className="product-short-description">{product.descripcion}</p>
+                    <p className="product-price">Precio: S/. {product.precio.toFixed(2)}</p>
+                    
+                    <div className="expand-indicator">
+                      {expandedProduct === product.id ? (
+                        <ChevronUp className="chevron-icon" />
+                      ) : (
+                        <ChevronDown className="chevron-icon" />
+                      )}
+                    </div>
+                  </div>
+                  
+                  {expandedProduct === product.id && (
+                    <div className="product-details">
+                      <div className="details-section">
+                        <h4>Descripción Completa</h4>
+                        <p className="full-description">{product.descripcion}</p>
+                      </div>
+                      
+                      <div className="dates-section">
+                        <div className="date-item">
+                          <Calendar className="date-icon" />
+                          <div>
+                            <strong>Fecha de Elaboración:</strong>
+                            <span>{formatDate(product.fechaElaboracion)}</span>
+                          </div>
+                        </div>
+                        
+                        <div className="date-item">
+                          <Clock className="date-icon" />
+                          <div>
+                            <strong>Fecha de Expiración:</strong>
+                            <span>{formatDate(product.fechaExpiracion)}</span>
+                          </div>
+                        </div>
+                      </div>
+                      
+                      {product.lote && (
+                        <div className="additional-info">
+                          <strong>Lote:</strong> {product.lote}
+                        </div>
+                      )}
+                    </div>
+                  )}
                 </li>
               ))}
             </ul>
